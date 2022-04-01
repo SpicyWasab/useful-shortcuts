@@ -1,0 +1,49 @@
+:root {
+    --primary-background: white;
+    --secondary-background: lightgray;
+    --text-color: black;
+    --keystroke-text-color: black;
+    --keystroke-background-color: lightgray;
+    --keystroke-border-color: gray;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background-color: var(--secondary-background);
+}
+
+main {
+    margin: auto;
+    width: 90ch;
+    height: 100vh;
+    padding: 2ch 5ch;
+    background-color: var(--primary-background);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table th {
+    border: 1px solid black;
+}
+
+kbd > kbd {
+    display: inline-block;
+    background-color: var(--keystroke-background-color);
+    border: 1px solid var(--keystroke-border-color);
+    border-radius: 5px;
+    padding: 2px 4px;
+    color: var(--keystroke-text-color);
+    font-weight: bold;
+}
+
+td:first-child {
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+{
+    "title": "Useful Shortcuts",
+    "description": "A cheatsheet containing some useful shortcuts.",
+    "shortcuts": {
+        "Generic Shortcuts": [
+            {
+                "keystrokes": ["Ctrl", "C"],
+                "description": "<C>opy the selected text"
+            },
+            {
+                "keystrokes": ["Ctrl", "X"],
+                "description": "Cut the selected text"
+            },
+            {
+                "keystrokes": ["Ctrl", "V"],
+                "description": "Paste the selected text"
+            }
+        ]
+    }
+}
