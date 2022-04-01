@@ -1,0 +1,20 @@
+{
+    "title": "Raccourcis Utiles",
+    "description": "Une petite fiche contenant quelques raccourcis utiles.",
+    "shortcutsCategories": {
+        "Raccourcis Généraux": [
+            {
+                "keystrokes": ["Ctrl", "C"],
+                "description": "{C}opier le texte sélectionné"
+            },
+            {
+                "keystrokes": ["Ctrl", "X"],
+                "description": "Couper le texte sélectionné"
+            },
+            {
+                "keystrokes": ["Ctrl", "V"],
+                "description": "Coller le texte sélectionné"
+            }
+        ]
+    }
+}

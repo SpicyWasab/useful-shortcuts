@@ -1,11 +1,11 @@
 {
     "title": "Useful Shortcuts",
     "description": "A cheatsheet containing some useful shortcuts.",
-    "shortcuts": {
+    "shortcutsCategories": {
         "Generic Shortcuts": [
             {
                 "keystrokes": ["Ctrl", "C"],
-                "description": "<C>opy the selected text"
+                "description": "{C}opy the selected text"
             },
             {
                 "keystrokes": ["Ctrl", "X"],

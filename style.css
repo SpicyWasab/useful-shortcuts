@@ -1,25 +1,31 @@
-:root {
+body.classic {
     --primary-background: white;
     --secondary-background: lightgray;
     --text-color: black;
     --keystroke-text-color: black;
     --keystroke-background-color: lightgray;
     --keystroke-border-color: gray;
+    --table-border-color: black;
 }
 
 body {
     display: flex;
     margin: 0;
     background-color: var(--secondary-background);
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 main {
+    font-size: 1.2em;
     margin: auto;
-    width: 90ch;
+    width: 65ch;
     height: 100vh;
-    padding: 2ch 5ch;
+    padding-inline: 5ch;
     background-color: var(--primary-background);
 }
+
+/*p, table {
+}*/
 
 table {
     width: 100%;
@@ -27,11 +33,19 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid var(--table-border-color);
 }
 
-table th {
-    border: 1px solid black;
+td {
+    padding: 2ch;
+}
+
+th {
+    border: 1px solid var(--table-border-color);
+}
+
+kbd {
+    user-select: none;
 }
 
 kbd > kbd {
@@ -46,4 +60,11 @@ kbd > kbd {
 
 td:first-child {
     text-align: center;
+}
+
+#settings-button {
+    position: fixed;
+    inset: auto 1rem 1rem auto;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
 }
