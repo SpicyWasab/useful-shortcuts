@@ -28,11 +28,20 @@ nav button {
     font-size: 1rem;
     width: 3rem;
     margin-right: .5rem;
+    opacity: .8;
     background-color: var(--primary-accent);
     border: 1px solid var(--text-color);
     border-radius: .8rem;
     font-weight: bold;;
     color: var(--text-color);
+    cursor: pointer;
+}
+
+nav button:hover {
+    box-shadow: 0px .2rem .5rem var(--primary-accent);
+    opacity: 1;
+    transition-property: box-shadow opacity;
+    transition-duration: .2s;
 }
 
 main {
@@ -91,6 +100,10 @@ td:first-child {
     width: auto;
     height: auto;
     inset: auto 1rem 5rem auto;
+}
+
+a {
+    color: var(--primary-accent);
 }
 
 mark {
