@@ -1,3 +1,4 @@
+// imports
 import { fetchLangDatas } from './languages.mjs';
 import { loadContent } from './load.mjs';
 import html from './html.mjs';
@@ -9,12 +10,13 @@ const mainElement = document.querySelector('main');
 const defaultLanguage = 'en';
 let activeLanguage = new URLSearchParams(window.location.search).get('lang') ?? defaultLanguage;
 
-// fetch language content, and load it into main
+// fetch language content, and load it on the page
 try {
     const content = await fetchLangDatas(activeLanguage);
     loadContent(content, mainElement);
-} catch(e) {
+} catch(e) { // in case of error (when fetching language content, for example with an unknown language)
     const { message } = e;
     
+    // display error's message on the page
     mainElement.append(html`<samp>Error : ${message}</samp>`);
 }
