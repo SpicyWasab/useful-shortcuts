@@ -28,8 +28,14 @@ function insertHTML(json) {
         const categoryTitleElement = html`<h2>${category}</h2>`;
         categoryElements.push(categoryTitleElement);
 
-        // get shortcuts
-        const shortcuts = shortcutsCategories[category];
+        // get description and shortcuts
+        const { description, shortcuts } = shortcutsCategories[category];
+
+        // create category descriptipn and push it
+        const categoryDescriptionElement = html`<p>${description}</p>`;
+        categoryElements.push(categoryDescriptionElement);
+
+        // create row elements and push them
         const tableRowElements = shortcuts.map(({ keystrokes, description }) => {
             keystrokes = keystrokesToHTML(keystrokes);
             description = parseKeystrokeDescription(description);
@@ -55,7 +61,9 @@ function insertHTML(json) {
 
         categoryElements.push(tableElement);
 
-        shortcutElements.push(...categoryElements);
+        const categorySectionElement = html`<section>${categoryElements}</section>`;
+
+        shortcutElements.push(categorySectionElement);
     }
     
     mainElement.append(titleElement, descriptionElement, ...shortcutElements);
@@ -105,5 +113,8 @@ var keystrokesReplacements = {
 
 var keystrokeDescriptionReplacements = {
     '{': '<b>',
-    '}': '</b>'
+    '}': '</b>',
+    '\n': '<br>',
+    '(': '<small>',
+    ')': '</small>'
 }

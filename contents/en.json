@@ -1,20 +1,101 @@
 {
     "title": "Useful Shortcuts",
-    "description": "A cheatsheet containing some useful shortcuts.",
+    "description": "A cheatsheet containing some useful shortcuts. They are not guaranteed to work with every software, it depends on the developper.",
     "shortcutsCategories": {
-        "Generic Shortcuts": [
-            {
-                "keystrokes": ["Ctrl", "C"],
-                "description": "{C}opy the selected text"
-            },
-            {
-                "keystrokes": ["Ctrl", "X"],
-                "description": "Cut the selected text"
-            },
-            {
-                "keystrokes": ["Ctrl", "V"],
-                "description": "Paste the selected text"
-            }
-        ]
+        "Generic Shortcuts": {
+            "description": "We can consider these shortcuts generic. Therefore, they sometimes might not be implemented.",
+            "shortcuts": [
+                {
+                    "keystrokes": ["Ctrl", "C"],
+                    "description": "{C}opy the selected text."
+                },
+                {
+                    "keystrokes": ["Ctrl", "X"],
+                    "description": "Cut the selected text."
+                },
+                {
+                    "keystrokes": ["Ctrl", "V"],
+                    "description": "Paste the selected text."
+                },
+                {
+                    "keystrokes": ["Ctrl", "P"],
+                    "description": "{P}rint the active document.\nFor example, you can try to print this cheatsheet !"
+                },
+                {
+                    "keystrokes": ["Ctrl", "T"],
+                    "description": "Open a new {t}ab."
+                },
+                {
+                    "keystrokes": ["Ctrl", "W"],
+                    "description": "Close the active document or tab."
+                },
+                {
+                    "keystrokes": ["Ctrl", "Shift", "T"],
+                    "description": "Reopen the last closed tab or document."
+                },
+                {
+                    "keystrokes": ["Ctrl", "S"],
+                    "description": "{S}ave the active document."
+                },
+                {
+                    "keystrokes": ["Ctrl", "Shift", "S"],
+                    "description": "{S}ave the active document as..."
+                },
+                {
+                    "keystrokes": ["Ctrl", "E"],
+                    "description": "{E}xport the active document."
+                },
+                {
+                    "keystrokes": ["Ctrl", "Shift", "T"],
+                    "description": "{E}xport the active document as..."
+                }
+            ]
+        },
+        "Text Formatting": {
+            "description": "You can basically use these ones in every text processing software.",
+            "shortcuts": [
+                {
+                    "keystrokes": ["Ctrl", "B"],
+                    "description": "Make the selected text {b}old."
+                },
+                {
+                    "keystrokes": ["Ctrl", "I"],
+                    "description": "Make the selected text {i}talic."
+                },
+                {
+                    "keystrokes": ["Ctrl", "U"],
+                    "description": "Make the selected text {u}nderlined."
+                }
+            ]
+        },
+        "Video": {
+            "description": "Some tips with video viewers.",
+            "shortcuts": [
+                {
+                    "keystrokes": ["Space"],
+                    "description": "Pause/Play the video."
+                },
+                {
+                    "keystrokes": ["ArrowRight"],
+                    "description": "Move forward. (5 seconds on YouTube)"
+                },
+                {
+                    "keystrokes": ["ArrowLeft"],
+                    "description": "Move backward (5 seconds on YouTube)."
+                },
+                {
+                    "keystrokes": ["K"],
+                    "description": "On YouTube, pause/play the video."
+                },
+                {
+                    "keystrokes": ["J"],
+                    "description": "On YouTube, move backward (10s).\n(it's because the J key is on the left of the K key)"
+                },
+                {
+                    "keystrokes": ["L"],
+                    "description": "On YouTube, move forward (10s).\n(it's because the J key is on the right of the K key)"
+                }
+            ]
+        }
     }
 }
