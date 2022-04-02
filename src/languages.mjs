@@ -7,3 +7,7 @@ export async function fetchLangDatas(lang) {
 
     return json;
 }
+
+export function setDocumentLang(lang) {
+    document.documentElement.setAttribute('lang', lang);
+}

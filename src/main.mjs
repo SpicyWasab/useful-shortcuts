@@ -1,5 +1,5 @@
 // imports
-import { fetchLangDatas } from './languages.mjs';
+import { fetchLangDatas, setDocumentLang } from './languages.mjs';
 import { loadContent } from './load.mjs';
 import html from './html.mjs';
 
@@ -13,7 +13,13 @@ let activeLanguage = new URLSearchParams(window.location.search).get('lang') ?? 
 // fetch language content, and load it on the page
 try {
     const content = await fetchLangDatas(activeLanguage);
+
+    // load content into page
     loadContent(content, mainElement);
+    // set document lang (html lang attribute)
+    setDocumentLang(activeLanguage);
+    // update document title
+    document.title = content.title;
 } catch(e) { // in case of error (when fetching language content, for example with an unknown language)
     const { message } = e;
     
