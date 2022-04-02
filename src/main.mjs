@@ -20,3 +20,14 @@ try {
     // display error's message on the page
     mainElement.append(html`<samp>Error : ${message}</samp>`);
 }
+
+// handle language change
+const languageButtons = document.querySelectorAll('nav button');
+
+for(const button of languageButtons) {
+    const languageId = button.textContent;
+
+    button.addEventListener('click', () => {
+        window.location.search = `lang=${languageId}`;
+    });
+}
