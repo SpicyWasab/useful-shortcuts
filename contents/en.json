@@ -1,9 +1,10 @@
 {
     "title": "Useful Shortcuts",
-    "description": "A cheatsheet containing some useful shortcuts. They are not guaranteed to work with every software, it depends on the developper.",
+    "description": "A cheatsheet containing some useful shortcuts. Some of them are not guaranteed to work with every software, it depends on the developper.",
+    "footer": "This website was entirely created with vanilla HTML, CSS et JS. You can view the source code here : ",
     "shortcutsCategories": {
         "Generic Shortcuts": {
-            "description": "We can consider these shortcuts generic. Therefore, they sometimes might not be implemented.",
+            "description": "You can use these almost everywhere.",
             "shortcuts": [
                 {
                     "keystrokes": ["Ctrl", "C"],
@@ -18,16 +19,42 @@
                     "description": "Paste the selected text."
                 },
                 {
-                    "keystrokes": ["Ctrl", "P"],
-                    "description": "{P}rint the active document.\nFor example, you can try to print this cheatsheet !"
+                    "keystrokes": ["Ctrl", "ArrowRight"],
+                    "description": "Move cursor to the end of the word.\n Use the left arrow to move it to the beginning."
                 },
                 {
+                    "keystrokes": ["Shift", "ArrowRight"],
+                    "description": "Move the cursor at right, and select the text. Can be done multiple times.\nYou can combine it with Ctrl, as explained above. It works the same for the left arrow."
+                }
+            ]
+        },
+        "Text Formatting": {
+            "description": "You can basically use these ones in every text processing software.",
+            "shortcuts": [
+                {
+                    "keystrokes": ["Ctrl", "B"],
+                    "description": "Make the selected text {B}old."
+                },
+                {
+                    "keystrokes": ["Ctrl", "I"],
+                    "description": "Make the selected text {I}talic."
+                },
+                {
+                    "keystrokes": ["Ctrl", "U"],
+                    "description": "{U}nderlined the selected text."
+                }
+            ]
+        },
+        "Generic Applications Shortcuts": {
+            "description": "We can consider these shortcuts generic. Therefore, they sometimes might not be implemented.",
+            "shortcuts": [
+                {
                     "keystrokes": ["Ctrl", "T"],
-                    "description": "Open a new {t}ab."
+                    "description": "Open a new {T}ab."
                 },
                 {
                     "keystrokes": ["Ctrl", "W"],
-                    "description": "Close the active document or tab."
+                    "description": "Close the active tab or document."
                 },
                 {
                     "keystrokes": ["Ctrl", "Shift", "T"],
@@ -48,23 +75,18 @@
                 {
                     "keystrokes": ["Ctrl", "Shift", "T"],
                     "description": "{E}xport the active document as..."
-                }
-            ]
-        },
-        "Text Formatting": {
-            "description": "You can basically use these ones in every text processing software.",
-            "shortcuts": [
-                {
-                    "keystrokes": ["Ctrl", "B"],
-                    "description": "Make the selected text {b}old."
                 },
                 {
-                    "keystrokes": ["Ctrl", "I"],
-                    "description": "Make the selected text {i}talic."
+                    "keystrokes": ["Ctrl", "P"],
+                    "description": "{P}rint the active document.\nFor example, you can try to print this cheatsheet !"
                 },
                 {
-                    "keystrokes": ["Ctrl", "U"],
-                    "description": "Make the selected text {u}nderlined."
+                    "keystrokes": ["Ctrl", "F"],
+                    "description": "{F}ind a word in the active document."
+                },
+                {
+                    "keystrokes": ["Ctrl", "Q"],
+                    "description": "{Q}uit the application. (It only works for some apps)"
                 }
             ]
         },

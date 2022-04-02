@@ -1,20 +1,123 @@
 {
     "title": "Raccourcis Utiles",
-    "description": "Une petite fiche contenant quelques raccourcis utiles.",
+    "description": "Une petite fiche contenant de nombreux raccourcis utiles. Certains d'entre-eux ne fonctionneront pas sur tous les logiciels, cela dépend des développeurs.",
+    "footer": "Site entièrement réalisé à la main en HTML, CSS et JS vanilla. Le code source est disponible à l'adresse suivante : ",
     "shortcutsCategories": {
-        "Raccourcis Généraux": [
-            {
-                "keystrokes": ["Ctrl", "C"],
-                "description": "{C}opier le texte sélectionné"
-            },
-            {
-                "keystrokes": ["Ctrl", "X"],
-                "description": "Couper le texte sélectionné"
-            },
-            {
-                "keystrokes": ["Ctrl", "V"],
-                "description": "Coller le texte sélectionné"
-            }
-        ]
+        "Raccourcis généraux": {
+            "description": "Vous pouvez utiliser ceux-là à peu près partout.",
+            "shortcuts": [
+                {
+                    "keystrokes": ["Ctrl", "C"],
+                    "description": "{C}opie le texte sélectionné."
+                },
+                {
+                    "keystrokes": ["Ctrl", "X"],
+                    "description": "Coupe le texte sélectionné."
+                },
+                {
+                    "keystrokes": ["Ctrl", "V"],
+                    "description": "Colle le texte sélectionné."
+                },
+                {
+                    "keystrokes": ["Ctrl", "ArrowRight"],
+                    "description": "Bouge le curseur à la fin d'un mot.\nLa flèche de droite le bouge au début du mot."
+                },
+                {
+                    "keystrokes": ["Shift", "ArrowRight"],
+                    "description": "Bouge le curseur à droite, et sélectionne le texte.\nPeut être combiné avec Ctrl (cf ci-dessus). Fonctionne de la même manière pour la flèche de gauche."
+                }
+            ]
+        },
+        "Traitement de texte": {
+            "description": "Vous pouvez utiliser ceux-là sur plus ou moins tous les logiciels de traitement de texte.",
+            "shortcuts": [
+                {
+                    "keystrokes": ["Ctrl", "B"],
+                    "description": "Met le texte en gras ({B}old)."
+                },
+                {
+                    "keystrokes": ["Ctrl", "I"],
+                    "description": "Met le texte en {I}talique."
+                },
+                {
+                    "keystrokes": ["Ctrl", "U"],
+                    "description": "Souligne le texte ({U}nderline)."
+                }
+            ]
+        },
+        "Raccourcis généraux d'application": {
+            "description": "On peut considérer ces raccourcis comme la norme. Cependant, ils peuvent parfois ne pas être implémentés.",
+            "shortcuts": [
+                {
+                    "keystrokes": ["Ctrl", "T"],
+                    "description": "Ouvre un nouvel onglet ({T}ab)."
+                },
+                {
+                    "keystrokes": ["Ctrl", "W"],
+                    "description": "Ferme l'onglet ou le document actif."
+                },
+                {
+                    "keystrokes": ["Ctrl", "Shift", "T"],
+                    "description": "Réouvre le dernier onglet ou le dernier document."
+                },
+                {
+                    "keystrokes": ["Ctrl", "S"],
+                    "description": "{S}auvegarde le document actif."
+                },
+                {
+                    "keystrokes": ["Ctrl", "Shift", "S"],
+                    "description": "{S}auvegarde le document actif sous..."
+                },
+                {
+                    "keystrokes": ["Ctrl", "E"],
+                    "description": "{E}xporte le document actif."
+                },
+                {
+                    "keystrokes": ["Ctrl", "Shift", "T"],
+                    "description": "{E}xporte le document actif sous..."
+                },
+                {
+                    "keystrokes": ["Ctrl", "P"],
+                    "description": "Imprime ({P}rint) le document actif.\nPar exemple, vous pouvez essayer d'imprimer cette fiche !"
+                },
+                {
+                    "keystrokes": ["Ctrl", "F"],
+                    "description": "Cherche ({F}ind) un mot dans le document actif."
+                },
+                {
+                    "keystrokes": ["Ctrl", "Q"],
+                    "description": "{Q}uitte l'application. (Ne fonctionne qu'avec certaines applications)"
+                }
+            ]
+        },
+        "Vidéos": {
+            "description": "Quelques astuces pour les vidéos (et aussi parfois pour les contenus audios).",
+            "shortcuts": [
+                {
+                    "keystrokes": ["Espace"],
+                    "description": "Joue/arrête la video (ou l'audio)."
+                },
+                {
+                    "keystrokes": ["ArrowRight"],
+                    "description": "Avancer de quelques secondes. (5 secondes sur YouTube)"
+                },
+                {
+                    "keystrokes": ["ArrowLeft"],
+                    "description": "Revenir en arrière de quelques secondes (5 secondes sur YouTube)."
+                },
+                {
+                    "keystrokes": ["K"],
+                    "description": "Sur YouTube, joue/arrête la vidéo. (Espace fonctionne aussi)"
+                },
+                {
+                    "keystrokes": ["J"],
+                    "description": "Sur YouTube, avancer (10s).\n(car la touche J est à la gauche de la touche K)"
+                },
+                {
+                    "keystrokes": ["L"],
+                    "description": "Sur YouTube, revenir en arrière (10s).\n(car la touche L est à la droite de la touche K)"
+                }
+            ]
+        }
     }
 }

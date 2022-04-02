@@ -1,15 +1,4 @@
-body.classic {
-    --primary-background: white;
-    --secondary-background: lightgray;
-    --text-color: black;
-    --text-unimportant: rgba(207,207,216,0.6509803921568628);
-    --keystroke-text-color: black;
-    --keystroke-background-color: lightgray;
-    --keystroke-border-color: gray;
-    --table-border-color: black;
-}
-
-body.dark {
+:root {
     --primary-background: #15141a;
     --secondary-background: #23222b;
     --text-color: #fbfbfe;
@@ -39,6 +28,7 @@ main {
 
 table {
     width: 100%;
+    margin-bottom: 3ch;
     border-collapse: collapse;
 }
 
@@ -50,19 +40,21 @@ td {
     padding: 2ch;
 }
 
-kbd {
+kbd.shortcut {
     user-select: none;
+    white-space: nowrap;
 }
 
-kbd > kbd {
+kbd > kbd.keystroke {
     display: inline-block;
     background-color: var(--keystroke-background-color);
-    border: 1px solid var(--keystroke-border-color);
+    border: 2px solid var(--keystroke-border-color);
     border-radius: 5px;
     padding: 2px 4px;
     color: var(--keystroke-text-color);
     font-weight: bold;
     font-family: Helvetica, Arial, sans-serif;
+    box-shadow: 0.2rem 0.2rem var(--keystroke-background-color);
 }
 
 td:first-child {
@@ -82,6 +74,12 @@ td:first-child {
     inset: auto 1rem 5rem auto;
 }
 
+mark {
+    background: none;
+    color: #f16b8c;
+    text-decoration: underline 2px;
+}
+
 small {
     color: var(--text-unimportant);
 }
@@ -95,13 +93,29 @@ small::after {
 }
 
 
-/* print */
+/* responsive on mobile */
+@media screen and (max-width: 70ch) {
+    main {
+        width: 100%;
+        padding-inline: 1ch;
+        font-size: 1em;
+    }
+}
 
+/* print */
 section {
     break-inside: avoid;
 }
 
-@page :first {
-    margin-block: 1cm;
-    margin-inline: 1cm;
+@media print {
+    body {
+        --primary-background: white !important;
+        --secondary-background: white !important;
+        --text-color: black !important;
+        --text-unimportant: rgba(107,107,116,0.6509803921568628) !important;
+        --keystroke-text-color: #cfcfd8 !important;
+        --keystroke-background-color: rgb(77, 75, 88) !important;
+        --keystroke-border-color: #444350 !important;
+        --table-border-color: black !important;
+    }
 }
