@@ -1,5 +1,5 @@
 // imports
-import { fetchLangDatas, setDocumentLang } from './languages.mjs';
+import { fetchLangDatas, setDocumentLang, setLangMetadatas } from './languages.mjs';
 import { loadContent } from './load.mjs';
 import html from './html.mjs';
 
@@ -18,6 +18,8 @@ try {
     loadContent(content, mainElement);
     // set document lang (html lang attribute)
     setDocumentLang(activeLanguage);
+    // set lang metadatas
+    setLangMetadatas(content);
     // update document title
     document.title = content.title;
 } catch(e) { // in case of error (when fetching language content, for example with an unknown language)

@@ -53,8 +53,6 @@ function parseToHTMLElements(json) {
         const tableRowElements = shortcuts.map(({ keystrokes, description }) => {
             keystrokes = keystrokesToHTML(keystrokes);
             description = parseCustomMarkup(description);
-            
-            console.log(keystrokes);
 
             return html`<tr>
                             <td>${keystrokes}</td>
