@@ -21,6 +21,7 @@ main {
     font-size: 1.2em;
     margin: auto;
     width: 65ch;
+    min-height: 100vh; /* for loading time */
     padding-inline: 5ch;
     padding-bottom: 5ch;
     background-color: var(--primary-background);
