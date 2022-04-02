@@ -16,14 +16,14 @@ export function setDocumentLang(lang) {
 }
 
 export function setLangMetadatas({ title, description }) {
-    const createMetadataElement = (title, value) => html`<meta property="og:${title}" content="${value}">`;
+    const createMetadataElement = (property, value) => html`<meta ${property} content="${value}">`;
     
     const metadatas = {
-        title,
-        description,
-        type: 'website',
-        image: 'https://iconorbit.com/icons/256-watermark/2004201613212919397-Keyboard%20icon.jpg',
-        url: window.location
+        'property="og:title"': title,
+        'property="og:description"': description,
+        'property="og:image"': 'https://iconorbit.com/icons/256-watermark/2004201613212919397-Keyboard%20icon.jpg',
+        'property="og:site_name"': title,
+        'name="theme-color"': '#f16b8c'
     }
 
     const metadataElements = [];
