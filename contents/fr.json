@@ -8,23 +8,43 @@
             "shortcuts": [
                 {
                     "keystrokes": ["Ctrl", "C"],
-                    "description": "{C}opie le texte sélectionné."
+                    "description": "{C}opie le texte sélectionné.",
+                    "testArea": { "type": "textarea", "content": "Copiez ce texte." }
                 },
                 {
                     "keystrokes": ["Ctrl", "X"],
-                    "description": "Coupe le texte sélectionné."
+                    "description": "Coupe le texte sélectionné.",
+                    "testArea": { "type": "textarea", "content": "Coupez ce texte." }
                 },
                 {
                     "keystrokes": ["Ctrl", "V"],
-                    "description": "Colle le texte sélectionné."
+                    "description": "Colle le texte sélectionné.",
+                    "testArea": { "type": "textarea", "placeholder": "Collez le texte ici." }
                 },
                 {
                     "keystrokes": ["Ctrl", "ArrowRight"],
-                    "description": "Bouge le curseur à la fin d'un mot.\nLa flèche de droite le bouge au début du mot."
+                    "description": "Bouge le curseur à la fin d'un mot.\nLa flèche de gauche le bouge au début du mot.",
+                    "testArea": { "type": "textarea", "content": "Vous pouvez essayer ici.\nC'est plutôt utilie pour éditer du texte." }
                 },
                 {
                     "keystrokes": ["Shift", "ArrowRight"],
-                    "description": "Bouge le curseur à droite, et sélectionne le texte.\nPeut être combiné avec Ctrl (cf ci-dessus). Fonctionne de la même manière pour la flèche de gauche."
+                    "description": "Bouge le curseur à droite, et sélectionne le texte.\nPeut être combiné avec Ctrl (cf ci-dessus). Fonctionne de la même manière pour la flèche de gauche.",
+                    "testArea": { "type": "textarea", "content": "Selectionnez-moi.\nVoici une autre ligne." }
+                },
+                {
+                    "keystrokes": ["Ctrl", "A"],
+                    "description": "Selectionne tout le texte. ({A}ll)",
+                    "testArea": { "type": "textarea", "content": "Vous pouvez sélectionner tout le texte ici." }
+                },
+                {
+                    "keystrokes": ["Tab"],
+                    "description": "Peut parfois être utilisé pour cibler le prochain élément, en particulier sur le web.",
+                    "testArea": { "type": "textarea", "content": "Ciblez-moi, et appuyez sur Tab pour cibler le prochain élément." }
+                },
+                {
+                    "keystrokes": ["Shift", "Tab"],
+                    "description": "Comme ci-dessus, mais cible l'élément précédent.",
+                    "testArea": { "type": "textarea", "content": "C'est utile sur le web, par exemple lorsque l'on écrit ses identifiants de connexion." }
                 }
             ]
         },
@@ -33,15 +53,18 @@
             "shortcuts": [
                 {
                     "keystrokes": ["Ctrl", "B"],
-                    "description": "Met le texte en gras ({B}old)."
+                    "description": "Met le texte en gras ({B}old).",
+                    "testArea": { "type": "editor", "content": "Mettez cette phrase en gras." }
                 },
                 {
                     "keystrokes": ["Ctrl", "I"],
-                    "description": "Met le texte en {I}talique."
+                    "description": "Met le texte en {I}talique.",
+                    "testArea": { "type": "editor", "content": "Mettez cette phrase en italique." }
                 },
                 {
                     "keystrokes": ["Ctrl", "U"],
-                    "description": "Souligne le texte ({U}nderline)."
+                    "description": "Souligne le texte ({U}nderline).",
+                    "testArea": { "type": "editor", "content": "Soulignez cette phrase." }
                 }
             ]
         },
@@ -50,43 +73,53 @@
             "shortcuts": [
                 {
                     "keystrokes": ["Ctrl", "T"],
-                    "description": "Ouvre un nouvel onglet ({T}ab)."
+                    "description": "Ouvre un nouvel onglet ({T}ab).",
+                    "testArea": "Vous pouvez ouvrir un nouvel onglet et charger une vidéo.\nCe sera utile plus bas."
                 },
                 {
                     "keystrokes": ["Ctrl", "W"],
-                    "description": "Ferme l'onglet ou le document actif."
+                    "description": "Ferme l'onglet ou le document actif.",
+                    "testArea": "Maintenant, vous pouvez retourner sur l'onglet que vous venez d'ouvrir, et le fermer."
                 },
                 {
                     "keystrokes": ["Ctrl", "Shift", "T"],
-                    "description": "Réouvre le dernier onglet ou le dernier document."
+                    "description": "Restaure le dernier onglet ou document fermé. (C'est probablement le raccourci le plus utile.)",
+                    "testArea": "Vous pouvez utiliser ce raccourci dès maintenant pour rouvrir la vidéo."
                 },
                 {
                     "keystrokes": ["Ctrl", "S"],
-                    "description": "{S}auvegarde le document actif."
+                    "description": "{S}auvegarde le document actif.",
+                    "testArea": "Vu que vous êtes sur un navigateur, cela sauvegardera la page actuelle dans un fichier HTML."
                 },
                 {
                     "keystrokes": ["Ctrl", "Shift", "S"],
-                    "description": "{S}auvegarde le document actif sous..."
+                    "description": "{S}auvegarde le document actif sous...",
+                    "testArea": "Vous ne pouvez pas le tester sur navigateur, le comportement est différent..\nPar exemple, sur firefox cela prend une capture d'écran ({S}creenshot)."
                 },
                 {
                     "keystrokes": ["Ctrl", "E"],
-                    "description": "{E}xporte le document actif."
+                    "description": "{E}xporte le document actif...",
+                    "testArea": "Vous ne pouvez pas l'essayer sur un navigateur."
                 },
                 {
                     "keystrokes": ["Ctrl", "Shift", "T"],
-                    "description": "{E}xporte le document actif sous..."
+                    "description": "{E}xporte le document actif sous...",
+                    "testArea": "Vous ne pouvez pas l'essayer sur un navigateur."
                 },
                 {
                     "keystrokes": ["Ctrl", "P"],
-                    "description": "Imprime ({P}rint) le document actif.\nPar exemple, vous pouvez essayer d'imprimer cette fiche !"
+                    "description": "Imprime le document actif. ({P}rint)",
+                    "testArea": "Dans un navigateur, ce raccourci imprime la page active.\nCertaines pages disposent d'une version adaptée à l'impression.\nC'est le cas de celle là, vous pouvez l'imprimer pour voir les changements comparés à la version web !\n(Dans le menu qui apparaît, allez dans 'Option avancés' et cochez 'Arrière plans' pour que les touches de claviers s'affichent correctement.)"
                 },
                 {
                     "keystrokes": ["Ctrl", "F"],
-                    "description": "Cherche ({F}ind) un mot dans le document actif."
+                    "description": "Cherche un mot dans le document actif. ({F}ind)",
+                    "testArea": "Vous pouvez l'essayer dès maintenant."
                 },
                 {
                     "keystrokes": ["Ctrl", "Q"],
-                    "description": "{Q}uitte l'application. (Ne fonctionne qu'avec certaines applications)"
+                    "description": "{Q}uitte l'application. (Ne fonctionne qu'avec certaines applications)",
+                    "testArea": "Fonctionne pour firefox, et probablement google chrome et les navigateurs basés sur chromium."
                 }
             ]
         },
@@ -94,28 +127,34 @@
             "description": "Quelques astuces pour les vidéos (et aussi parfois pour les contenus audios).",
             "shortcuts": [
                 {
-                    "keystrokes": ["Espace"],
-                    "description": "Joue/arrête la video (ou l'audio)."
+                    "keystrokes": ["Space"],
+                    "description": "Joue/Arrête la video (ou l'audio).",
+                    "testArea": "J'aurais pu mettre une vidéo ici, mais je suis fainéant."
                 },
                 {
                     "keystrokes": ["ArrowRight"],
-                    "description": "Avancer de quelques secondes. (5 secondes sur YouTube)"
+                    "description": "Avancer de quelques secondes. (5 secondes sur YouTube)",
+                    "testArea": "Si vous avez gardé l'onglet youtube, vous pouvez essayer."
                 },
                 {
                     "keystrokes": ["ArrowLeft"],
-                    "description": "Revenir en arrière de quelques secondes (5 secondes sur YouTube)."
+                    "description": "Revenir en arrière de quelques secondes (5 secondes sur YouTube).",
+                    "testArea": "Si vous avez gardé l'onglet youtube, vous pouvez essayer."
                 },
                 {
                     "keystrokes": ["K"],
-                    "description": "Sur YouTube, joue/arrête la vidéo. (Espace fonctionne aussi)"
+                    "description": "Sur YouTube, joue/arrête la vidéo. (Espace fonctionne aussi)",
+                    "testArea": "Si vous avez gardé l'onglet youtube, vous pouvez essayer."
                 },
                 {
                     "keystrokes": ["J"],
-                    "description": "Sur YouTube, avancer (10s).\n(car la touche J est à la gauche de la touche K)"
+                    "description": "Sur YouTube, revenir en arrière (10s).\n(car la touche L est à la droite de la touche K)",
+                    "testArea": "Si vous avez gardé l'onglet youtube, vous pouvez essayer."
                 },
                 {
                     "keystrokes": ["L"],
-                    "description": "Sur YouTube, revenir en arrière (10s).\n(car la touche L est à la droite de la touche K)"
+                    "description": "Sur YouTube, avancer (10s).\n(car la touche J est à la gauche de la touche K)",
+                    "testArea": "Si vous avez gardé l'onglet youtube, vous pouvez essayer."
                 }
             ]
         }
