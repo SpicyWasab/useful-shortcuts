@@ -47,7 +47,7 @@ nav button:hover {
 main {
     font-size: 1.2em;
     margin: auto;
-    width: 65ch;
+    width: 75ch;
     min-height: 100vh; /* for loading time */
     padding-inline: 5ch;
     padding-bottom: 5ch;
@@ -82,7 +82,27 @@ kbd > kbd.keystroke {
     color: var(--keystroke-text-color);
     font-weight: bold;
     font-family: Helvetica, Arial, sans-serif;
-    box-shadow: 0.2rem 0.2rem var(--keystroke-background-color);
+    box-shadow: .2rem .2rem var(--keystroke-background-color);
+}
+
+kbd > kbd.keystroke:hover {
+    transform: translate(.2rem, .2rem);
+    box-shadow: none;
+    transition-property: transform box-shadow;
+    transition-duration: .0125s;
+}
+
+td.test-cell {
+    width: 20ch;
+}
+
+textarea {
+    width: 100%;
+    margin: 0;
+    background-color: var(--secondary-background);
+    border: 1px solid var(--table-border-color);
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--text-color);
 }
 
 td:first-child {
@@ -132,6 +152,10 @@ small::after {
         padding-inline: 1ch;
         font-size: 1em;
     }
+
+    .test-cell {
+        display: none;
+    }
 }
 
 /* print */
@@ -151,7 +175,7 @@ section {
         --table-border-color: black !important;
     }
 
-    nav, footer {
+    nav, footer, .test-cell {
         display: none;
     }
 }

@@ -70,9 +70,9 @@ function parseToHTMLElements(json) {
             <table>
                 <thead>
                     <tr>
-                        <th>Shortcut</th>
-                        <th>Description</th>
-                        <th>Try it !</th>
+                        <th class="shortcut-cell">Shortcut</th>
+                        <th class="description-cell">Description</th>
+                        <th class="test-cell">Try it !</th>
                     </tr>
                 </thead>
                 <tbody>
