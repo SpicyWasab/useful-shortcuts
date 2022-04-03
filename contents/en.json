@@ -65,51 +65,61 @@
             "description": "We can consider these shortcuts generic. Therefore, they sometimes might not be implemented.",
             "shortcuts": [
                 {
+                    "id": "tab:open",
                     "keystrokes": ["Ctrl", "T"],
                     "description": "Open a new {T}ab.",
                     "testArea": "You're in a web browser, right ?\nSo you can open a new tab, and load a YouTube video, then come back.\nIt would be useful later."
                 },
                 {
+                    "id": "tab:close",
                     "keystrokes": ["Ctrl", "W"],
                     "description": "Close the active tab or document.",
                     "testArea": "Nice to see you again. Now you can go to the tab you've just created, and close it.\nDon't worry."
                 },
                 {
+                    "id": "tab:restore",
                     "keystrokes": ["Ctrl", "Shift", "T"],
-                    "description": "Reopen the last closed tab or document. (This is probably the most useful one.)",
+                    "description": "Restore the last closed tab or document. (This is probably the most useful one.)",
                     "testArea": "You can use this shortcut right now to restore the tab."
                 },
                 {
+                    "id": "document:save",
                     "keystrokes": ["Ctrl", "S"],
                     "description": "{S}ave the active document.",
                     "testArea": "Since you're in a web browser, doing this will save the current webpage in a HTML file."
                 },
                 {
+                    "id": "document:saveas",
                     "keystrokes": ["Ctrl", "Shift", "S"],
                     "description": "{S}ave the active document as...",
                     "testArea": "You can't test it on a browser. For example, on firefox this 'S' stands for {S}creenshot."
                 },
                 {
+                    "id": "document:export",
                     "keystrokes": ["Ctrl", "E"],
                     "description": "{E}xport the active document.",
                     "testArea": "You can't test it on a browser."
                 },
                 {
+                    "id": "document:exportas",
                     "keystrokes": ["Ctrl", "Shift", "T"],
                     "description": "{E}xport the active document as...",
                     "testArea": "You can't test it on a browser."
                 },
                 {
+                    "id": "document:print",
                     "keystrokes": ["Ctrl", "P"],
                     "description": "{P}rint the active document.",
                     "testArea": "In a web browser, this shortcut prints the active webpage.\nSome web pages may have a special stylesheet that removes useless content to be 'printer friendly'.\nIt's the case of this webpage, so you can print this stylesheet ! (Go to 'Advanced options' and tick 'print backgrounds' to properly render keystokes.)"
                 },
                 {
+                    "id": "document:find",
                     "keystrokes": ["Ctrl", "F"],
                     "description": "{F}ind a word in the active document.",
                     "testArea": "You can test it right now."
                 },
                 {
+                    "id": "app:quit",
                     "keystrokes": ["Ctrl", "Q"],
                     "description": "{Q}uit the application. (It only works for a few apps)",
                     "testArea": "Works for firefox, and probably google chrome and other chromium-based browser."
@@ -120,31 +130,37 @@
             "description": "Some tips with video viewers.",
             "shortcuts": [
                 {
+                    "id": "video:pause",
                     "keystrokes": ["Space"],
                     "description": "Pause/Play the video.",
                     "testArea": "I could have put a video there, but I'm lazy."
                 },
                 {
+                    "id": "video:forward",
                     "keystrokes": ["ArrowRight"],
                     "description": "Move forward. (5 seconds on YouTube)",
                     "testArea": "If you've loaded a YouTube video as requested above, you can try it."
                 },
                 {
+                    "id": "video:backward",
                     "keystrokes": ["ArrowLeft"],
                     "description": "Move backward (5 seconds on YouTube).",
                     "testArea": "If you've loaded a YouTube video as requested above, you can try it."
                 },
                 {
+                    "id": "youtube:pause",
                     "keystrokes": ["K"],
                     "description": "On YouTube, pause/play the video.",
                     "testArea": "If you've loaded a YouTube video as requested above, you can try it."
                 },
                 {
+                    "id": "youtube:backward",
                     "keystrokes": ["J"],
                     "description": "On YouTube, move backward (10s).\n(it's because the J key is on the left of the K key)",
                     "testArea": "If you've loaded a YouTube video as requested above, you can try it."
                 },
                 {
+                    "id": "youtube:forward",
                     "keystrokes": ["L"],
                     "description": "On YouTube, move forward (10s).\n(it's because the J key is on the right of the K key)",
                     "testArea": "If you've loaded a YouTube video as requested above, you can try it."
