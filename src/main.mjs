@@ -1,6 +1,7 @@
 // imports
 import { fetchLangDatas, setDocumentLang, setLangMetadatas } from './languages.mjs';
 import { loadContent } from './load.mjs';
+import { startEditors } from './editors.mjs';
 import html from './html.mjs';
 
 // main element
@@ -39,3 +40,6 @@ for(const button of languageButtons) {
         window.location.search = `lang=${languageId}`;
     });
 }
+
+// handle text formatting
+startEditors();

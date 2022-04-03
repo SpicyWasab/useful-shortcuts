@@ -55,6 +55,7 @@ function parseToHTMLElements(json) {
             description = parseCustomMarkup(description);
             testArea = (typeof testArea === 'string') ? testArea : // if it's a string, return testArea
                        (testArea.type === 'textarea') ? html`<textarea placeholder="${testArea.placeholder ?? ''}">${testArea.content ?? ''}</textarea>` : // if it's a textarea, return a textarea
+                       (testArea.type === 'editor') ? html`<div class="editor" contenteditable="true">${testArea.content}</div>` :
                        undefined; // otherwise, return undefined.
                 ;
 

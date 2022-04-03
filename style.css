@@ -96,13 +96,17 @@ td.test-cell {
     width: 20ch;
 }
 
-textarea {
+textarea, .editor {
     width: 100%;
     margin: 0;
     background-color: var(--secondary-background);
     border: 1px solid var(--table-border-color);
     font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
     color: var(--text-color);
+    height: 3em;
+    overflow: hidden;
+    resize: none;
 }
 
 td:first-child {

@@ -45,19 +45,19 @@
                     "id": "text:bold",
                     "keystrokes": ["Ctrl", "B"],
                     "description": "Make the selected text {B}old.",
-                    "testArea": { "type": "textarea", "content": "Make this sentence bold." }
+                    "testArea": { "type": "editor", "content": "Make this sentence bold." }
                 },
                 {
                     "id": "text:italic",
                     "keystrokes": ["Ctrl", "I"],
                     "description": "Make the selected text {I}talic.",
-                    "testArea": { "type": "textarea", "content": "Make this sentence italic." }
+                    "testArea": { "type": "editor", "content": "Make this sentence italic." }
                 },
                 {
                     "id": "text:underline",
                     "keystrokes": ["Ctrl", "U"],
                     "description": "{U}nderlined the selected text.",
-                    "testArea": { "type": "textarea", "content": "Make this sentence undelined." }
+                    "testArea": { "type": "editor", "content": "Make this sentence undelined." }
                 }
             ]
         },
