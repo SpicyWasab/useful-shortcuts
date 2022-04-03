@@ -7,24 +7,34 @@
             "description": "You can use these almost everywhere.",
             "shortcuts": [
                 {
+                    "id": "text:copy",
                     "keystrokes": ["Ctrl", "C"],
-                    "description": "{C}opy the selected text."
+                    "description": "{C}opy the selected text.",
+                    "testArea": { "type": "textarea", "content": "Copy this text." }
                 },
                 {
+                    "id": "text:cut",
                     "keystrokes": ["Ctrl", "X"],
-                    "description": "Cut the selected text."
+                    "description": "Cut the selected text.",
+                    "testArea": { "type": "textarea", "content": "Cut this text." }
                 },
                 {
+                    "id": "text:paste",
                     "keystrokes": ["Ctrl", "V"],
-                    "description": "Paste the selected text."
+                    "description": "Paste the selected text.",
+                    "testArea": { "type": "textarea", "placeholder": "Paste the copied text here." }
                 },
                 {
+                    "id": "cursor:move",
                     "keystrokes": ["Ctrl", "ArrowRight"],
-                    "description": "Move cursor to the end of the word.\n Use the left arrow to move it to the beginning."
+                    "description": "Move cursor to the end of the word.\n Use the left arrow to move it to the beginning.",
+                    "testArea": { "type": "textarea", "content": "You can try here.\nIt's pretty useful when editing text." }
                 },
                 {
+                    "id": "cursor:select",
                     "keystrokes": ["Shift", "ArrowRight"],
-                    "description": "Move the cursor at right, and select the text. Can be done multiple times.\nYou can combine it with Ctrl, as explained above. It works the same for the left arrow."
+                    "description": "Move the cursor at right, and select the text. Can be done multiple times.\nYou can combine it with Ctrl, as explained above. It works the same for the left arrow.",
+                    "testArea": { "type": "textarea", "content": "Select me.\nHere's another line." }
                 }
             ]
         },
@@ -32,16 +42,22 @@
             "description": "You can basically use these ones in every text processing software.",
             "shortcuts": [
                 {
+                    "id": "text:bold",
                     "keystrokes": ["Ctrl", "B"],
-                    "description": "Make the selected text {B}old."
+                    "description": "Make the selected text {B}old.",
+                    "testArea": { "type": "textarea", "content": "Make this sentence bold." }
                 },
                 {
+                    "id": "text:italic",
                     "keystrokes": ["Ctrl", "I"],
-                    "description": "Make the selected text {I}talic."
+                    "description": "Make the selected text {I}talic.",
+                    "testArea": { "type": "textarea", "content": "Make this sentence italic." }
                 },
                 {
+                    "id": "text:underline",
                     "keystrokes": ["Ctrl", "U"],
-                    "description": "{U}nderlined the selected text."
+                    "description": "{U}nderlined the selected text.",
+                    "testArea": { "type": "textarea", "content": "Make this sentence undelined." }
                 }
             ]
         },
@@ -50,43 +66,53 @@
             "shortcuts": [
                 {
                     "keystrokes": ["Ctrl", "T"],
-                    "description": "Open a new {T}ab."
+                    "description": "Open a new {T}ab.",
+                    "testArea": "You're in a web browser, right ?\nSo you can open a new tab, and load a YouTube video, then come back.\nIt would be useful later."
                 },
                 {
                     "keystrokes": ["Ctrl", "W"],
-                    "description": "Close the active tab or document."
+                    "description": "Close the active tab or document.",
+                    "testArea": "Nice to see you again. Now you can go to the tab you've just created, and close it.\nDon't worry."
                 },
                 {
                     "keystrokes": ["Ctrl", "Shift", "T"],
-                    "description": "Reopen the last closed tab or document."
+                    "description": "Reopen the last closed tab or document. (This is probably the most useful one.)",
+                    "testArea": "You can use this shortcut right now to restore the tab."
                 },
                 {
                     "keystrokes": ["Ctrl", "S"],
-                    "description": "{S}ave the active document."
+                    "description": "{S}ave the active document.",
+                    "testArea": "Since you're in a web browser, doing this will save the current webpage in a HTML file."
                 },
                 {
                     "keystrokes": ["Ctrl", "Shift", "S"],
-                    "description": "{S}ave the active document as..."
+                    "description": "{S}ave the active document as...",
+                    "testArea": "You can't test it on a browser. For example, on firefox this 'S' stands for {S}creenshot."
                 },
                 {
                     "keystrokes": ["Ctrl", "E"],
-                    "description": "{E}xport the active document."
+                    "description": "{E}xport the active document.",
+                    "testArea": "You can't test it on a browser."
                 },
                 {
                     "keystrokes": ["Ctrl", "Shift", "T"],
-                    "description": "{E}xport the active document as..."
+                    "description": "{E}xport the active document as...",
+                    "testArea": "You can't test it on a browser."
                 },
                 {
                     "keystrokes": ["Ctrl", "P"],
-                    "description": "{P}rint the active document.\nFor example, you can try to print this cheatsheet !"
+                    "description": "{P}rint the active document.",
+                    "testArea": "In a web browser, this shortcut prints the active webpage.\nSome web pages may have a special stylesheet that removes useless content to be 'printer friendly'.\nIt's the case of this webpage, so you can print this stylesheet ! (Go to 'Advanced options' and tick 'print backgrounds' to properly render keystokes.)"
                 },
                 {
                     "keystrokes": ["Ctrl", "F"],
-                    "description": "{F}ind a word in the active document."
+                    "description": "{F}ind a word in the active document.",
+                    "testArea": "You can test it right now."
                 },
                 {
                     "keystrokes": ["Ctrl", "Q"],
-                    "description": "{Q}uit the application. (It only works for some apps)"
+                    "description": "{Q}uit the application. (It only works for a few apps)",
+                    "testArea": "Works for firefox, and probably google chrome and other chromium-based browser."
                 }
             ]
         },
@@ -95,27 +121,33 @@
             "shortcuts": [
                 {
                     "keystrokes": ["Space"],
-                    "description": "Pause/Play the video."
+                    "description": "Pause/Play the video.",
+                    "testArea": "I could have put a video there, but I'm lazy."
                 },
                 {
                     "keystrokes": ["ArrowRight"],
-                    "description": "Move forward. (5 seconds on YouTube)"
+                    "description": "Move forward. (5 seconds on YouTube)",
+                    "testArea": "If you've loaded a YouTube video as requested above, you can try it."
                 },
                 {
                     "keystrokes": ["ArrowLeft"],
-                    "description": "Move backward (5 seconds on YouTube)."
+                    "description": "Move backward (5 seconds on YouTube).",
+                    "testArea": "If you've loaded a YouTube video as requested above, you can try it."
                 },
                 {
                     "keystrokes": ["K"],
-                    "description": "On YouTube, pause/play the video."
+                    "description": "On YouTube, pause/play the video.",
+                    "testArea": "If you've loaded a YouTube video as requested above, you can try it."
                 },
                 {
                     "keystrokes": ["J"],
-                    "description": "On YouTube, move backward (10s).\n(it's because the J key is on the left of the K key)"
+                    "description": "On YouTube, move backward (10s).\n(it's because the J key is on the left of the K key)",
+                    "testArea": "If you've loaded a YouTube video as requested above, you can try it."
                 },
                 {
                     "keystrokes": ["L"],
-                    "description": "On YouTube, move forward (10s).\n(it's because the J key is on the right of the K key)"
+                    "description": "On YouTube, move forward (10s).\n(it's because the J key is on the right of the K key)",
+                    "testArea": "If you've loaded a YouTube video as requested above, you can try it."
                 }
             ]
         }
