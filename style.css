@@ -20,6 +20,7 @@ body {
 
 nav ul {
     display: flex;
+    gap: .5rem;
     list-style-type: none;
     padding: 0;
 }
@@ -27,7 +28,6 @@ nav ul {
 nav button {
     font-size: 1rem;
     width: 3rem;
-    margin-right: .5rem;
     opacity: .8;
     background-color: var(--primary-accent);
     border: 1px solid var(--text-color);
