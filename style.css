@@ -146,9 +146,8 @@ small::after {
 
 
 /* responsive on mobile */
-@media screen and (max-width: 70ch) {
+@media screen and (max-width: 100ch) {
     main {
-        width: 100%;
         padding-inline: 1ch;
         font-size: 1em;
     }
