@@ -109,17 +109,12 @@ td:first-child {
     text-align: center;
 }
 
-#settings-button {
+button#scroll-to-top {
     position: fixed;
     inset: auto 1rem 1rem auto;
     padding-inline: 1rem;
-    padding-block: 0.5rem;
-}
-
-#settings-dialog {
-    width: auto;
-    height: auto;
-    inset: auto 1rem 5rem auto;
+    padding-block: 1rem;
+    border-radius: 1000px;
 }
 
 a {
