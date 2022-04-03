@@ -50,13 +50,18 @@ function parseToHTMLElements(json) {
         categoryElements.push(categoryDescriptionElement);
 
         // create row elements and push them
-        const tableRowElements = shortcuts.map(({ keystrokes, description }) => {
+        const tableRowElements = shortcuts.map(({ keystrokes, description, testArea }) => {
             keystrokes = keystrokesToHTML(keystrokes);
             description = parseCustomMarkup(description);
+            testArea = (typeof testArea === 'string') ? testArea : // if it's a string, return testArea
+                       (testArea.type === 'textarea') ? html`<textarea placeholder="${testArea.placeholder ?? ''}">${testArea.content ?? ''}</textarea>` : // if it's a textarea, return a textarea
+                       undefined; // otherwise, return undefined.
+                ;
 
             return html`<tr>
-                            <td>${keystrokes}</td>
-                            <td>${description}</td>
+                            <td class="shortcut-cell">${keystrokes}</td>
+                            <td class="description-cell">${description}</td>
+                            <td class="test-cell">${testArea}</td>
                         </tr>`;
         });
 
@@ -67,6 +72,7 @@ function parseToHTMLElements(json) {
                     <tr>
                         <th>Shortcut</th>
                         <th>Description</th>
+                        <th>Try it !</th>
                     </tr>
                 </thead>
                 <tbody>
