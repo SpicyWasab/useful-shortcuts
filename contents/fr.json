@@ -127,7 +127,7 @@
             "description": "Quelques astuces pour les vidéos (et aussi parfois pour les contenus audios).",
             "shortcuts": [
                 {
-                    "keystrokes": ["Space"],
+                    "keystrokes": ["Espace"],
                     "description": "Joue/Arrête la video (ou l'audio).",
                     "testArea": "J'aurais pu mettre une vidéo ici, mais je suis fainéant."
                 },

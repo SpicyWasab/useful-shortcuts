@@ -1,5 +1,6 @@
 export default {
     'Shift': '⇧',
     'ArrowRight': '→',
-    'ArrowLeft': '←'
+    'ArrowLeft': '←',
+    'Tab': '↹'
 }

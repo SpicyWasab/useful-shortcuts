@@ -39,7 +39,7 @@
                 {
                     "keystrokes": ["Tab"],
                     "description": "Can sometimes be used to focus the next focusable element, especially on the web.",
-                    "testArea": { "type": "textarea", "content": "Focus me, then press tab to focus the next text area." }
+                    "testArea": { "type": "textarea", "content": "Focus me, then press Tab to focus the next text area." }
                 },
                 {
                     "keystrokes": ["Shift", "Tab"],

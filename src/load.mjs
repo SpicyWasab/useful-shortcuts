@@ -100,10 +100,11 @@ function parseToHTMLElements(json) {
  */
 function keystrokesToHTML(keystrokes) {
     // for each keystroke
-    const keystrokeElements = keystrokes.map(keystroke => {
-        if(keystroke in keystrokesReplacements) keystroke = keystrokesReplacements[keystroke]; // replace keystroke text if possible (exemple : replace "Shift" with an UpArrow)
+    const keystrokeElements = keystrokes.map(keystrokeText => {
+        let keystroke = keystrokeText;
+        if(keystrokeText in keystrokesReplacements) keystroke = keystrokesReplacements[keystrokeText]; // replace keystroke text if possible (exemple : replace "Shift" with an UpArrow)
 
-        return /*html*/`<kbd class="keystroke">${keystroke}</kbd>`; // this is just a string, the HTML code for the keystroke
+        return /*html*/`<kbd class="keystroke" title="${keystrokeText}">${keystroke}</kbd>`; // this is just a string, the HTML code for the keystroke
     });
 
     // create the shortcut html
