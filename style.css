@@ -54,6 +54,13 @@ main {
     background-color: var(--primary-background);
 }
 
+section h2 {
+    padding-block: .5ch;
+    background-color: var(--primary-background);
+    position: sticky;
+    top: 0;
+}
+
 table {
     width: 100%;
     margin-bottom: 3ch;
