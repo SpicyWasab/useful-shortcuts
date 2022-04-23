@@ -69,7 +69,7 @@
             ]
         },
         "Raccourcis généraux d'application": {
-            "description": "On peut considérer ces raccourcis comme la norme. Cependant, ils peuvent parfois ne pas être implémentés.",
+            "description": "On peut considérer ces raccourcis comme une norme. Cependant, ils peuvent parfois ne pas être implémentés.",
             "shortcuts": [
                 {
                     "keystrokes": ["Ctrl", "T"],
