@@ -9,16 +9,16 @@ const mainElement = document.querySelector('main');
 
 // determine current language, default is english.
 const defaultLanguage = 'en';
-let activeLanguage = new URLSearchParams(window.location.search).get('lang') ?? defaultLanguage;
+const currentLanguage = new URLSearchParams(window.location.search).get('lang') ?? defaultLanguage;
 
 // fetch language content, and load it on the page
 try {
-    const content = await fetchLangDatas(activeLanguage);
+    const content = await fetchLangDatas(currentLanguage);
 
     // load content into page
     loadContent(content, mainElement);
     // set document lang (html lang attribute)
-    setDocumentLang(activeLanguage);
+    setDocumentLang(currentLanguage);
     // set lang metadatas
     setLangMetadatas(content);
     // update document title
